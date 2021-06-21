@@ -264,5 +264,5 @@
 }
 .list
 {
-    list-style: none;
+    list-style: none; /*прибирає точки в списку*/
 }
