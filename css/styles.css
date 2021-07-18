@@ -1,15 +1,29 @@
 /*Стилізація верхнього меню секції HEADER*/
+/*Перемінні*/
+:root{
+    --color-text: #2196F3;
+    --color-text-logo: black;  
+    --color-text-menu:#212121;
+    --color-text-mail-tel:#757575;
+    --color-text-section: #212121;
+    --color-sections-text:#757575;
+    --text-color-hero:#FFFFFF;
 
+    --background-color-hero: #2f303a;
+    --background-color-btn: #188ce8;
+    --background-color-footer:#2F303A;
+    --background-color-modal-btn-potfolio:#2196F3;
+}
 /*Логотип WebStudio*/
 .logo{
     font-family: Raleway; 
     font-style: normal; 
-    font-weight: bold; s
+    font-weight: bold;
     font-size: 26px; 
     line-height: 31px;
 /* identical to box height */ 
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--color-text)
     text-decoration: none
     text-shadow: 0 4 4
     rgba(0,0.0,0.25);
@@ -17,11 +31,11 @@
 }
 .logo-web
 {
-    color:#2196f3
+    color: var(--color-text)
 }
 .logo-s
 {
-    color:black
+    color:var(--color-text-logo);
 }
 /*Стилізація блокім меню: Студія,Потфоліо...*/
 .menu-link{
@@ -32,18 +46,18 @@
     line-height: 1.14; 
     letter-spacing: 0.02em;
     
-    color: #212121;
+    color:var(--color-text-menu);
     text-decoration: none
 }
 .menu-link:hover,
 .menu-link:focus
 {
-    color: #2196f3
+    color: var(--color-text)
 }
 
 .menu-link.current
 {
-    color: #2196f3
+    color:var(--color-text);
 }
 
 /*Стилізація блоків меню тел, майл*/
@@ -55,7 +69,7 @@
     line-height: 1.14; 
     letter-spacing: 0.02em;
     
-    color: #757575;
+    color:var(--color-text-mail-tel);
     text-decoration: none
 }
 .tel-link
@@ -66,18 +80,18 @@
     font-size: 14px; 
     line-height: 1.14; 
     letter-spacing: 0.02em;
-    color: #757575;
+    color:var(--color-text-mail-tel);
     text-decoration: none
 }
 .mail-link:hover,
 .mail-link:focus
 {
-    color: #2196f3
+    color: var(--color-text);
 }
 .tel-link:hover,
 .tel-link:focus
 {
-    color: #2196f3
+    color:var(--color-text);
 }
 
 
@@ -89,12 +103,13 @@
     font-weight: 900; 
     font-size: 44px; 
     line-height: 1.36;
-    color: #FFFFFF;
-    background: #2f303a;
+    color: var(--text-color-hero);
+    background:var(--background-color-hero);
+    text-transform: uppercase;
 }
 .modal-btn 
 {
-    background: #188ce8;
+    background:var(--background-color-btn);
     font-family: Roboto; 
     font-style: normal; 
     font-weight: bold; 
@@ -105,7 +120,7 @@
     align-items: center; 
     text-align: center; 
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--text-color-hero);
     cursor: pointer;
 }
 
@@ -120,7 +135,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--color-text-section);
 }
 
 .hero-list-item
@@ -131,7 +146,7 @@
     font-size: 14px; 
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color:var(--color-sections-text);
 }
 
 /*Секція чим займаємося Section-2*/
@@ -143,7 +158,7 @@
     font-size: 36px; 
     line-height: 1.16;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--color-text-section);
 }
 
 
@@ -156,7 +171,7 @@
     font-size: 16px; 
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--color-text-section);
 }
 .section-profession
 {
@@ -167,24 +182,24 @@
     font-size: 16px; 
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--color-sections-text);
 }
 /*Стилізація секяції footer*/
 
 .footer
 {
-    background: #2F303A;
+    background: var(--background-color-footer);
 }
 .logo-footer
 {
     font-family: Raleway; 
     font-style: normal; 
-    font-weight: bold; s
+    font-weight: bold;
     font-size: 26px; 
     line-height: 1.19;
 /* identical to box height */ 
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--color-text);
     text-decoration: none
     text-shadow: 0 4 4
     rgba(0,0.0,0.25);
@@ -192,11 +207,11 @@
 }
 .logo-footer-web
 {
-    color:#2196f3
+    color:var(--color-text);
 }
 .logo-footer-s
 {
-    color:white
+    color:var(--text-color-hero);
 }
 .footer-adres-1
 {
@@ -206,7 +221,7 @@
     font-size: 14px; 
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--text-color-hero);
     text-decoration: none;
 }
 .footer-adres-2
@@ -232,14 +247,14 @@
     font-size: 14px; 
     line-height: 1.63;
     letter-spacing: 0.03em;
-    color: #212121;
+    color:var(--color-text-section);
     cursor: pointer;
 }   
 .modal-btn-portfolio:hover,
 .modal-btn-portfolio:focus
 {
-    color: #FFFFFF;
-    background: #2196f3;
+    color: var(--text-color-hero);
+    background:var(--background-color-modal-btn-potfolio);
 }
 
 .portfolio-list
@@ -250,7 +265,7 @@
     font-size: 18px; 
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--color-text-section);
 }
 .portfolio-list-item
 {
@@ -260,7 +275,7 @@
     font-size: 16px; 
     line-height: 1.85;
     letter-spacing: 0.06em;
-    color: #757575;
+    color: var(--color-sections-text);
 }
 .list
 {
